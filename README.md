@@ -3,6 +3,4 @@
 
 In order to use this, you have to enter the full directory name e.g. C:\Users\Sam\documents\work
 
-The program will then ask which file type you want to be renamed. <b>It will ignore every other file type.</b>
-
-Then the program will need a name in order to rename all of the files specified. 
+Then the program will then rename <b>all the files in that directory</b>.
