@@ -2,7 +2,7 @@ import os
 os.system("cls")
 
 def main():
-    file_formats = ["txt", "jpeg", "png", "html", "docx", "pptx", "csv", "mp3", "mp4", "m4a", "mid", "wav"]
+    file_formats = ["txt", "jpeg", "png", "html", "docx", "pptx", "csv", "mp3", "mp4", "m4a", "mid", "wav", "py"]
 
     folder = input("Enter path to directory: ")
     while True:
