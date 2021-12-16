@@ -1,18 +1,16 @@
-import os
+import os 
+import reassign
+import renamer
 os.system("cls")
 
 def main():
-    folder = input("Enter path to directory: ")
-    print("WARNING, this will rename every file in the given directory!")
-    name = input(f"Enter new name for files: ")
-
-    for count, filename in enumerate(os.listdir(folder)):
-        temp = filename.split(".")
-        file_ext = temp[1]
-        dst = f"{name} {str(count+1)}.{file_ext}"
-        src = f"{folder}/{filename}"
-        dst = f"{folder}/{dst}"  
-        os.rename(src, dst)
-
+    ask = input("Bulk rename or reassign[RN/RS]: ").lower()
+    if ask == "rn":
+        renamer.rename()
+    elif ask == "rs":
+        reassign.reassign()
+    else:
+        print("Not a valid option. Please try again")
+        
 if __name__ == "__main__":
     main()
