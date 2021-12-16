@@ -18,7 +18,7 @@ def main():
         temp = filename.split(".")
         file_ext = temp[1]
         if file_ext == enter:
-            dst = f"{name} {str(count)}.{file_ext}"
+            dst = f"{name} {str(count+1)}.{file_ext}"
             src = f"{folder}/{filename}"
             dst = f"{folder}/{dst}"  
             os.rename(src, dst)
