@@ -1,18 +1,5 @@
 import os
 os.system("cls")
-
-def main():
-    folder = input("Enter path to directory: ")
-    print("WARNING, this will rename every file in the given directory!")
-    name = input(f"Enter new name for files: ")
-
-    for count, filename in enumerate(os.listdir(folder)):
-        temp = filename.split(".")
-        file_ext = temp[1]
-        dst = f"{name} {str(count+1)}.{file_ext}"
-        src = f"{folder}/{filename}"
-        dst = f"{folder}/{dst}"  
-        os.rename(src, dst)
-
-if __name__ == "__main__":
-    main()
+folder = input("Enter path to directory: ")
+print("WARNING, this will rename every file in the given directory!")
+for count, filename in enumerate(os.listdir(folder)): os.rename(f"{folder}/{filename}", f"{folder}/{input(f"Enter new name for files: ")} {str(count+1)}.{filename.split(".")[1]}")
