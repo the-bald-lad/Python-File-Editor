@@ -4,7 +4,7 @@
 </u></div>
  A simple bulk file renamer, written in python. 
 
-There are three functions, the bulk rename, the bulk file extention change and both.
+There are four functions, the bulk rename, the bulk file extention change, the rename and reasign(both) and the Rename Picker.
 <hr>
 <div align="center"><u>
 
@@ -44,3 +44,19 @@ Then the program will require is a name to rename <b>all the files in the direct
 Then the program will require the new file extentions in order to change <b>all of the files in the chosen directory</b>
 
 This will result in everything in the directory being renamed, and changing the file extentions to the given extention.
+
+<hr>
+
+<div align="center"><u>
+
+## Rename Picker
+
+</u></div>
+
+In order to use the picker, you will have to enter the full directory name e.g. C:\Users\Sam\documents\work
+
+The program will then number each file in the directory and ask for the number of the files you wish to be renamed. 
+
+Then the program will require is a name to rename <b> the  chosen files in the directory</b>
+
+This will result in the chosen files being renamed, but retaining their file extention. 
