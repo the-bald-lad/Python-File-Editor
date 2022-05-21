@@ -1,5 +1,8 @@
 import os, reassign, renamer, both, rename_picker
-os.system("cls")
+if os.name == 'nt':
+    os.system("cls")
+else:
+    os.system("clear")
 
 def main():
     ask = input("Bulk rename, Reassign, Rename and Reasign(both) or picker[RN/R/B/P]: ").lower()
